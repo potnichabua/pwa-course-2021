@@ -1,4 +1,6 @@
 import './App.css';
+import SendIcon from '@material-ui/icons/Send';
+import SentimentSatisfiedAltIcon from '@material-ui/icons/SentimentSatisfiedAlt';
 
 function App() {
   return (
@@ -14,12 +16,13 @@ function App() {
           I'm Prikhom
         </div>
         <div className="App-chatroom-text chat-left">
-          Line2
+          Baba
         </div>
       </div>
       <div className="App-textbox">
+        <div className="icon"><SentimentSatisfiedAltIcon fontSize="large" /></div>
         <input type="text" className="App-textbox-input"/>
-        <div className="App-textbox-send">Send!</div>
+        <div className="App-textbox-send"><SendIcon /></div>
       </div>
     </div>
   );

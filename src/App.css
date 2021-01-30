@@ -5,8 +5,9 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
-  background-color: #f8f9ff;
-  color: #2f2f2f;
+  color: #7882ff;
+  background-color: #e8eaff;
+  transition: cubic-bezier(0.65, 0.01, 0.5, 1.03);
 }
 
 .App-logo {
@@ -16,13 +17,15 @@
 
 .App-header {
   flex: 1;
-  background-color: #ccd0ff;
+  /* background-color: #ccd0ff; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   font-weight: bold;
+  font-size: 20px;
+  padding: 16px;
 }
 
 .App-chatroom {
@@ -34,6 +37,7 @@
   background-color: #ffffff;
   padding: 16px;
   border-radius: 100px;
+  box-shadow: 1px 2px 13px 1px #7882ff1c;
 }
 
 .chat-right {
@@ -45,28 +49,30 @@
 
 .chat-left {
   border-bottom-left-radius: 0;
-  background-color: #e8eaff;
+  background-color: #f8f9ff;
   margin-right: 50px;
 }
 
 .App-textbox {
   flex: 1;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   display: flex;
   margin: 16px;
+  color: #ccd0ff;
 }
 
 .App-textbox-input {
-  flex: 4;
+  flex: 5;
   height: 100%;
   box-sizing: border-box;
   border: none;
   outline: none;
   padding: 0 20px;
   border-radius: 50px;
-  background-color: #e8e9ff;
-  margin-right: 10px;
+  background-color: #d9dcff;
+  color: #7882ff;
+  margin-right: 5px;
 }
 
 .App-textbox-send {
