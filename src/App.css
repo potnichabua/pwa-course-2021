@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   max-width: 400px;
   height: 100%;
   margin: auto;
+  background-color: #f8f9ff;
+  color: #2f2f2f;
 }
 
 .App-logo {
@@ -15,37 +16,57 @@
 
 .App-header {
   flex: 1;
-  background-color: #181818;
+  background-color: #ccd0ff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: bold;
 }
 
 .App-chatroom {
   flex: 12;
-  background-color: #8c00ff;
 }
 
 .App-chatroom-text {
-  margin: 8px;
+  margin: 16px;
   background-color: #ffffff;
+  padding: 16px;
+  border-radius: 100px;
+}
+
+.chat-right {
+  border-bottom-right-radius: 0;
+  background-color: #7882ff;
+  color: #fff;
+  margin-left: 50px;
+}
+
+.chat-left {
+  border-bottom-left-radius: 0;
+  background-color: #e8eaff;
+  margin-right: 50px;
 }
 
 .App-textbox {
   flex: 1;
-  background-color: gray;
   justify-content: center;
   align-items: stretch;
   display: flex;
+  margin: 16px;
 }
 
 .App-textbox-input {
-  flex: 5;
+  flex: 4;
   height: 100%;
   box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  border-radius: 50px;
+  background-color: #e8e9ff;
+  margin-right: 10px;
 }
 
 .App-textbox-send {
@@ -55,4 +76,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  color: #fff;
+  background-color: #7882ff;
+  border-radius: 100%;
 }
