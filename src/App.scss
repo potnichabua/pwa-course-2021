@@ -1,7 +1,10 @@
 $primary: #7882ff;
-$secondary:#e8eaff;
+$secondary: #d9dcff;
+$icon-light:#ccd0ff;
 $white-color: #fff;
-$box-shadow: #7882ff1c;
+$box-shadow: 1px 2px 13px 1px #7882ff1c;
+
+$padding-default: 16px;
 
 .App {
   display: flex;
@@ -11,7 +14,7 @@ $box-shadow: #7882ff1c;
   height: 100%;
   margin: auto;
   color: $primary;
-  background-color: $secondary;
+  background-color: #e8eaff;
   transition: cubic-bezier(0.65, 0.01, 0.5, 1.03);
 }
 
@@ -22,7 +25,6 @@ $box-shadow: #7882ff1c;
 
 .App-header {
   flex: 1;
-  /* background-color: #ccd0ff; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,64 +32,65 @@ $box-shadow: #7882ff1c;
   font-size: calc(10px + 2vmin);
   font-weight: bold;
   font-size: 20px;
-  padding: 16px;
+  padding: $padding-default;
 }
 
+/*-- Chat Room --*/
 .App-chatroom {
   flex: 12;
+  .App-chatroom-text {
+    margin: $padding-default;
+    background-color: $white-color;
+    padding: $padding-default;
+    border-radius: 100px;
+    box-shadow: $box-shadow;
+  
+    &.chat-right {
+      border-bottom-right-radius: 0;
+      background-color: $primary;
+      color:$white-color;
+      margin-left: 50px;
+    }
+    
+    &.chat-left {
+      border-bottom-left-radius: 0;
+      background-color: #f8f9ff;
+      margin-right: 50px;
+    }
+  }
 }
 
-.App-chatroom-text {
-  margin: 16px;
-  background-color: $white-color;
-  padding: 16px;
-  border-radius: 100px;
-  box-shadow: 1px 2px 13px 1px $box-shadow;
-}
-
-.chat-right {
-  border-bottom-right-radius: 0;
-  background-color: $primary;
-  color:$white-color;
-  margin-left: 50px;
-}
-
-.chat-left {
-  border-bottom-left-radius: 0;
-  background-color: #f8f9ff;
-  margin-right: 50px;
-}
-
+/*-- Send input typing --*/
 .App-textbox {
   flex: 1;
   justify-content: center;
   align-items: center;
   display: flex;
-  margin: 16px;
-  color: #ccd0ff;
-}
+  margin: $padding-default;
+  color: $icon-light;
 
-.App-textbox-input {
-  flex: 5;
-  height: 100%;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
-  padding: 0 20px;
-  border-radius: 50px;
-  background-color: #d9dcff;
-  color: $primary;
-  margin-right: 5px;
-}
+  .App-textbox-input {
+    flex: 5;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    border-radius: 50px;
+    background-color: $secondary;
+    color: $primary;
+    margin-right: 5px;
+  }
 
-.App-textbox-send {
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  color:$white-color;
-  background-color: $primary;
-  border-radius: 100%;
+  .App-textbox-send {
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color:$white-color;
+    background-color: $primary;
+    border-radius: 100%;
+  }
 }

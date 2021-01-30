@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import SendIcon from '@material-ui/icons/Send';
 import SentimentSatisfiedAltIcon from '@material-ui/icons/SentimentSatisfiedAlt';
 
