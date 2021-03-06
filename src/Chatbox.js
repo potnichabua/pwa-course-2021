@@ -27,13 +27,7 @@ function Chatbox() {
   }
 
   return (
-    <div className="App col-6">
-      <Link to="/friend-list">
-         <ArrowBackIcon />
-      </Link>
-      <div className="App-header">
-        Onion
-      </div>
+    <div className="App col-12">
       <div className="App-chatroom">
         {
           lines.map(x => {
@@ -42,9 +36,6 @@ function Chatbox() {
                     </div>
           })
         }
-        {/* <div className="App-chatroom-text chat-left">
-          Baba
-        </div> */}
       </div>
       <div className="App-textbox">
         <div className="icon"><SentimentSatisfiedAltIcon fontSize="large" /></div>

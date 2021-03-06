@@ -37,26 +37,32 @@ $padding-default: 16px;
 /*-- Chat Room --*/
 .App-chatroom {
   flex: 12;
+
   .App-chatroom-text {
     margin: $padding-default;
     background-color: $white-color;
     padding: $padding-default;
     border-radius: 100px;
     box-shadow: $box-shadow;
-  
+
     &.chat-right {
       border-bottom-right-radius: 0;
       background-color: $primary;
-      color:$white-color;
+      color: $white-color;
       margin-left: 50px;
     }
-    
+
     &.chat-left {
       border-bottom-left-radius: 0;
       background-color: #f8f9ff;
       margin-right: 50px;
     }
   }
+}
+
+.App-content {
+  display: flex;
+  flex: 12;
 }
 
 /*-- Send input typing --*/
@@ -88,31 +94,68 @@ $padding-default: 16px;
     justify-content: center;
     align-items: center;
     display: flex;
-    color:$white-color;
+    color: $white-color;
     background-color: $primary;
     border-radius: 100%;
   }
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
 
 @media (max-width: 768px) {
+
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
   }
 }
+
 @media (min-width: 768px) {
   .App-textbox .App-textbox-send {
     flex: unset;
