@@ -7,13 +7,14 @@ import App from './App';
 function FriendList() {
     return (
         <App>
-            <div>
-                Friend List
-                <Link to="/">
-                    <button>
-                        <ChatIcon />
-                    </button>
-                </Link>
+            <div className="friendlist-page col-12">
+                <div className="text-header">Friend List</div>
+                <div className="list-item">
+                    <div className="name">Onion</div>
+                    <Link to="/" className="chat">
+                        <button><ChatIcon /></button>
+                    </Link>
+                </div>
             </div>
         </App>
     )

@@ -1,4 +1,4 @@
-import './Chatbox.scss';
+import './Style.scss';
 import SendIcon from '@material-ui/icons/Send';
 import SentimentSatisfiedAltIcon from '@material-ui/icons/SentimentSatisfiedAlt';
 import { useState } from 'react';

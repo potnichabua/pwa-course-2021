@@ -49,70 +49,10 @@ $padding-default: 16px;
   }
 }
 
-/*-- Chat Room --*/
-.App-chatroom {
-  flex: 12;
-
-  .App-chatroom-text {
-    margin: $padding-default;
-    background-color: $white-color;
-    padding: $padding-default;
-    border-radius: 100px;
-    box-shadow: $box-shadow;
-
-    &.chat-right {
-      border-bottom-right-radius: 0;
-      background-color: $primary;
-      color: $white-color;
-      margin-left: 50px;
-    }
-
-    &.chat-left {
-      border-bottom-left-radius: 0;
-      background-color: #f8f9ff;
-      margin-right: 50px;
-    }
-  }
-}
-
 .App-content {
+  padding: $padding-default;
   display: flex;
   flex: 12;
-}
-
-/*-- Send input typing --*/
-.App-textbox {
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin: $padding-default;
-  color: $icon-light;
-
-  .App-textbox-input {
-    flex: 5;
-    height: 100%;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    padding: 0 20px;
-    border-radius: 50px;
-    background-color: $secondary;
-    color: $primary;
-    margin-right: 5px;
-  }
-
-  .App-textbox-send {
-    flex: 1;
-    height: 100%;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: $white-color;
-    background-color: $primary;
-    border-radius: 100%;
-  }
 }
 
 .col-1 {
@@ -168,12 +108,5 @@ $padding-default: 16px;
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .App-textbox .App-textbox-send {
-    flex: unset;
-    padding: 0 20px;
   }
 }

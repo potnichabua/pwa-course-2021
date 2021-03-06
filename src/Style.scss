@@ -4,22 +4,12 @@ $icon-light:#ccd0ff;
 $white-color: #fff;
 $box-shadow: 1px 2px 13px 1px #7882ff1c;
 
+$text-2xl: 4em;
+$text-xl: 2em;
+$text-lg: 1.2em;
+$text-base: 1em;
+
 $padding-default: 16px;
-
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  color: $primary;
-  background-color: #e8eaff;
-  transition: cubic-bezier(0.65, 0.01, 0.5, 1.03);
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 /*-- Chat Room --*/
 .App-chatroom {
@@ -53,7 +43,6 @@ $padding-default: 16px;
   justify-content: center;
   align-items: center;
   display: flex;
-  margin: $padding-default;
   color: $icon-light;
 
   .App-textbox-input {
@@ -79,6 +68,52 @@ $padding-default: 16px;
     color: $white-color;
     background-color: $primary;
     border-radius: 100%;
+  }
+}
+
+
+.name {
+  font-size: $text-lg;
+  //font-weight: 600;
+}
+
+/*== Friend List Screen ==*/
+.list-item {
+  display: flex;
+  align-items: center;
+
+  .name {
+    flex: 11;
+  }
+
+  .chat {
+    flex: 1;
+
+    button {
+      border: none;
+      padding: 8px;
+      background-color: #e8eaff;
+      color: $primary;
+    }
+  }
+}
+
+
+/*== Profile Screen ==*/
+.text-header {
+  text-align: center;
+  font-weight: 500;
+  font-size: $text-lg;
+  padding-bottom: 24px;
+}
+
+.profile-info {
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+
+  .MuiSvgIcon-root {
+    font-size: $text-2xl;
   }
 }
 
