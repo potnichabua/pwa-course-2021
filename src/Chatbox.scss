@@ -21,18 +21,6 @@ $padding-default: 16px;
   pointer-events: none;
 }
 
-.App-header {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  font-weight: bold;
-  font-size: 20px;
-  padding: $padding-default;
-}
-
 /*-- Chat Room --*/
 .App-chatroom {
   flex: 12;

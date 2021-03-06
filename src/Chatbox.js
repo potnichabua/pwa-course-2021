@@ -1,9 +1,8 @@
 import './Chatbox.scss';
 import SendIcon from '@material-ui/icons/Send';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import SentimentSatisfiedAltIcon from '@material-ui/icons/SentimentSatisfiedAlt';
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
+import App from './App';
 
 function Chatbox() {
 
@@ -27,22 +26,24 @@ function Chatbox() {
   }
 
   return (
-    <div className="App col-12">
-      <div className="App-chatroom">
-        {
-          lines.map(x => {
-            return  <div className="App-chatroom-text chat-right">
-                      {x}
-                    </div>
-          })
-        }
-      </div>
-      <div className="App-textbox">
-        <div className="icon"><SentimentSatisfiedAltIcon fontSize="large" /></div>
-        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        <div className="App-textbox-send" onClick={onSend}><SendIcon /></div>
-      </div>
-    </div>
+    <App> 
+        <div className="App col-12">
+            <div className="App-chatroom">
+                {
+                lines.map(x => {
+                    return  <div className="App-chatroom-text chat-right">
+                            {x}
+                            </div>
+                })
+                }
+            </div>
+            <div className="App-textbox">
+                <div className="icon"><SentimentSatisfiedAltIcon fontSize="large" /></div>
+                <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
+                <div className="App-textbox-send" onClick={onSend}><SendIcon /></div>
+            </div>
+        </div>
+    </App> 
   );
 }
 
