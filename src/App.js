@@ -1,5 +1,4 @@
 import './App.scss';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { Link } from 'react-router-dom'
 
 function App({children}) {
@@ -8,15 +7,21 @@ function App({children}) {
     <div className="App col-6">
       <div className="App-header">
         <Link to="/friend-list">
-          Friend List
+          <button>
+            Friend List
+          </button>
         </Link>
 
-        <Link to="/friend-list">
-          Profile
+        <Link to="/Profile">
+          <button>
+            Profile
+          </button>
         </Link>
 
-        <Link to="/friend-list">
-          Chatbox
+        <Link to="/Chatbox">
+          <button>
+            Chatbox
+          </button>
         </Link>
 
     </div>
